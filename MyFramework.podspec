@@ -92,7 +92,8 @@ Pod::Spec.new do |spec|
   spec.source_files  = "MyFramework"
   spec.exclude_files = "Classes/Exclude"
   spec.swift_version = "5.0"
-  spec.vendored_frameworks": "MyFramework.framework",
+  # spec.source_files  = "MyFramework/**/*.swift"
+  # spec.resources = "MyFramework/**/*.storyboard"
   # spec.public_header_files = "Classes/**/*.h"
 
 
@@ -116,7 +117,7 @@ Pod::Spec.new do |spec|
   #  the lib prefix of their name.
   #
 
-  # spec.framework  = "SomeFramework"
+  spec.framework  = "MyFramework"
   # spec.frameworks = "SomeFramework", "AnotherFramework"
 
   # spec.library   = "iconv"
