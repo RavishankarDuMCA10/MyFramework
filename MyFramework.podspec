@@ -93,9 +93,9 @@ Pod::Spec.new do |spec|
   spec.exclude_files = "Classes/Exclude"
   spec.swift_version = "5.0"
   # spec.source_files  = "MyFramework/**/*.swift"
-  spec.resources = "MyFramework/*.framework"
+  # spec.resources = "MyFramework/**/*.storyboard"
   # spec.public_header_files = "Classes/**/*.h"
-
+  spec.framework  = 'MyFramework'
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
