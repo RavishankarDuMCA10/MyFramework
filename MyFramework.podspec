@@ -92,7 +92,7 @@ Pod::Spec.new do |spec|
   spec.source_files  = "MyFramework"
   spec.exclude_files = "Classes/Exclude"
   spec.swift_version = "5.0"
-
+  spec.vendored_frameworks": "MyFramework.framework",
   # spec.public_header_files = "Classes/**/*.h"
 
 
